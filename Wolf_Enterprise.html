@@ -1,10 +1,182 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>WOLF ENTERPRISE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WOLF__ENTERPRISE</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#f8f9fa;
+  color:#333;
+}
+
+/* HERO SECTION */
+.hero{
+  background:url('https://i.ibb.co/VphtVZCf/this-is-same-shoes.jpg') no-repeat center center/cover;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.hero h1{
+  font-size:40px;
+  background:rgba(0,0,0,0.6);
+  padding:15px 25px;
+  border-radius:8px;
+}
+
+.hero button{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  background:#ff4d4d;
+  color:white;
+  font-size:16px;
+  border-radius:5px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.hero button:hover{
+  background:#e60000;
+}
+
+/* SHOP DETAILS */
+.shop-details{
+  padding:40px 20px;
+  text-align:center;
+  background:white;
+}
+
+.shop-details h2{
+  margin-bottom:15px;
+}
+
+/* PRODUCT SECTION */
+.products{
+  padding:40px 20px;
+}
+
+.products h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.carousel{
+  display:flex;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+  gap:20px;
+  padding-bottom:10px;
+}
+
+.product-card{
+  min-width:250px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+  padding:15px;
+  text-align:center;
+}
+
+.product-card img{
+  width:100%;
+  border-radius:8px;
+}
+
+.product-card h3{
+  margin:10px 0;
+}
+
+.product-card p{
+  font-size:14px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  text-decoration:none;
+  font-size:22px;
+  box-shadow:0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* MOBILE */
+@media(max-width:600px){
+  .hero h1{
+    font-size:28px;
+  }
+}
+</style>
 </head>
+
 <body>
-    <h1>Welcome to Our Website</h1>
-    <p>This website has 100+ unique products</p>
+
+<!-- HERO SECTION -->
+<section class="hero">
+  <h1>Welcome to WOLF__ENTERPRISE</h1>
+  <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+    Shop Now
+  </button>
+</section>
+
+<!-- SHOP DETAILS -->
+<section class="shop-details">
+  <h2>Shop Details</h2>
+  <p><strong>Shop Name:</strong> WOLF__ENTERPRISE</p>
+  <p><strong>Owner Email:</strong> your-email@example.com</p>
+  <p><strong>Phone:</strong> 9313857700</p>
+  <p><strong>Items:</strong> Shoes, Sneakers, Sports Shoes, Casual Footwear</p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <h2>Our Products</h2>
+  <div class="carousel">
+
+    <div class="product-card">
+      <img src="https://i.ibb.co/k6SsnMW4/bf1dde93f96b63906d918a724e1923bf.png">
+      <h3>Running Shoes</h3>
+      <p>High quality comfortable running shoes.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.ibb.co/k6SsnMW4/bf1dde93f96b63906d918a724e1923bf.png">
+      <h3>Casual Sneakers</h3>
+      <p>Trendy sneakers for everyday wear.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://i.ibb.co/k6SsnMW4/bf1dde93f96b63906d918a724e1923bf.png">
+      <h3>Sports Shoes</h3>
+      <p>Perfect grip and lightweight design.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/9313857700" class="whatsapp" target="_blank">
+  💬
+</a>
+
 </body>
 </html>
